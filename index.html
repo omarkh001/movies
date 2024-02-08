@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./css/all.min.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- side bar -->
+<div class="setting d-flex ">
+    <div class="gear-box d-flex flex-column justify-content-between align-items-center">
+       <div class="content-links d-flex flex-column">
+        <span class="mb-3 links" data-type="now_playing">now playing</span>
+        <span  class="mb-3 links" data-type="popular">popular</span>
+        <span  class="mb-3 links" data-type="top_rated">top Rated</span>
+        <span  class="mb-3 links" data-type="trending">trending</span>
+        <span  class="mb-3 links" data-type="upcoming">upcoming</span>
+        <span  class="mb-3">contact</span>
+       </div>
+
+        <div class="social d-flex ">
+            <i class="fa-brands ms-2 fa-facebook-f"></i>
+            <i class="fa-brands ms-2  fa-twitter"></i>
+            <i class="fa-solid ms-2  fa-globe"></i>
+        </div>
+    </div>
+    <div class="icon-side  d-flex flex-column justify-content-between align-items-center">
+<div class="icon-top w-100 d-flex flex-column justify-content-between align-items-center">
+    <img src="./img/logo.png" class="w-50" alt="">
+       
+</div>
+<i id="mainIcon" class="fa-solid fa-align-justify fs-3" ></i>
+<!-- <i class="fa-solid fa-xmark"></i> -->
+<div class="icon-bottom d-flex flex-column">
+    <i class="fa-solid fa-globe py-1"></i>
+<i class="fa-solid fa-share-nodes"></i>
+</div>
+    </div>
+</div>
+<!-- side bar -->
+<!-- content -->
+<!-- input -->
+<div class=" container py-5 bg-danger">
+    <div class="input-group  w-50 mx-auto ">
+       
+        <input id="search" type="text" class="form-control rounded-pill " placeholder="search...." aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+
+</div>
+<!-- input -->
+<div class="content py-5">
+    <div class="container">
+<div class="row gy-5" id="myData">
+
+    
+</div>
+    </div>
+</div>
+
+
+<!-- content -->
+ 
+<div class="contact py-5">
+    <div class="container">
+        <h2 class="py-5">contact US</h2>
+   <div class="form-content d-flex">
+    <div class="input-group w-50 px-2 mb-3">
+           
+        <input type="text" onkeyup="inputValidation()" class="form-control" id="userName" placeholder="enter your Name" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group w-50 mb-3">
+           
+        <input type="email" onkeyup="inputValidation()" id="userEmail" class="form-control" placeholder="Enter your Email" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+   </div>
+   <div class="form-content2 d-flex">
+    <div class="input-group w-50 px-2 mb-3">
+           
+        <input type="tel" onkeyup="inputValidation()" id="userPhone" class="form-control" placeholder="Enter your phone" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group w-50 mb-3">
+           
+        <input type="number" onkeyup="inputValidation()" id="userAge" class="form-control" placeholder="Enter your Age" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+   </div>
+   <div class="form-content3 d-flex">
+    <div class="input-group w-50 px-2 mb-3">
+           
+        <input type="password" onkeyup="inputValidation()" id="userpassword" class="form-control" placeholder="Enter your password" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group w-50 mb-3">
+           
+        <input type="password" onkeyup="inputValidation()" id="rePassword" class="form-control" placeholder="reEnter password" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+   </div>
+
+   <button disabled id="sumbit"  class="btn btn-danger d-block mx-auto">sumbit</button>
+
+    </div>
+</div>
+
+
+    
+
+<script src="./scripts/bootstrap.bundle.min.js"></script>
+<script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
